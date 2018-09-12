@@ -30,13 +30,19 @@ export class AppComponent {
     this.email = '';
     this.perks =[
       {
+        "title": "Millions of Songs ",
         "feature": "Access to over 35 million songs. Access to podcasts and audiobooks.",
+        "icon": "glyphicon glyphicon-heart",
       },
       {
+        "title": "Go Anywhere",
         "feature": "Travel abroad with your music. On demand mobile access.",
+        "icon": "glyphicon glyphicon-globe",
       },
       {
+        "title": "No interruptions ",
         "feature": "No ad interruptions.Listen without an internet connection.",
+        "icon": "glyphicon glyphicon-headphones",
       },
     ];
 

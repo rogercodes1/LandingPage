@@ -7,6 +7,7 @@ h3{
   text-align: center;
 
 }
+
 a {
   color: #000;
   text-decoration: none;
@@ -48,4 +49,23 @@ input[type="submit"] {
     background-color: orange;
     transition: background-color 1s;
   }
+}
+ul{
+  list-style: none;
+}
+/* Perks Container  */
+
+.perk-title{
+  font-size: 2em;
+}
+.perk-description{
+
+}
+@@media (max-width:720px) {
+  .perk-title{
+    text-align: left;
+  }
+
+}
+.perks-cont{
 }
