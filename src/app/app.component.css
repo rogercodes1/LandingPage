@@ -22,12 +22,26 @@ a {
   font-weight: 700;
 }
 
+/* Sign up email container */
+.card-body{
+  margin: auto;
+}
+input[type="email"] {
+    max-width: 375px;
+    min-width:250px;
+    width: 100%;
+    padding: 5px;
+  }
+
 input[type="submit"] {
   max-width: 150px;
   width: 100%;
   height: 30px;
   margin: 15px 0;
   border: 0;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
   background-color: #f1c40f;
 
   &:hover {

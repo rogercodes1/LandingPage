@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+// import (CommonModule) from '@angular/core'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,17 +13,33 @@ import { Component } from '@angular/core';
   //   }`]
 })
 export class AppComponent {
-  title = 'LandingPage';
-  query: string;
+  title = 'Music Plans';
+  email: string;
   plans: object;
+  perks: object;
 
-  showArtist(e, item){
+  selectPlan(e, item){
     console.log(e);
-    this.query = item.name
+    this.email = item.name
+  }
+  checkPlan(e, item){
+    console.log(e);
   }
 
   constructor(){
-    this.query = '';
+    this.email = '';
+    this.perks =[
+      {
+        "feature": "Access to over 35 million songs. Access to podcasts and audiobooks.",
+      },
+      {
+        "feature": "Travel abroad with your music. On demand mobile access.",
+      },
+      {
+        "feature": "No ad interruptions.Listen without an internet connection.",
+      },
+    ];
+
     this.plans = [
 {
 "name": "Free Trial",

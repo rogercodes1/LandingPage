@@ -26,25 +26,43 @@
   <div class="row justify-content-center">
     <div class="card mt-sm-3 col-md-8">
       <div class="card-body">
-        <div class="form-group">
+        <div class="form-group ">
           Sign up is just an email away:
           <div class="form-label"
-          *ngIf="query">
-            <strong>Email: {{ query }}</strong>
+          *ngIf="email">
+            <strong>Email: {{ email }}</strong>
           </div>
-
-            <input placeholder="Enter your email ..." class="form-control mt-2" type="email"
-            [(ngModel)]="query">
+          <form id="form" action="">
+            <input
+            placeholder="Enter your email ..."
+            class="form-control mt-2" type="email"
+            name="email"
+            [(ngModel)]="email">
             <input
             class="btn btn-primary"
             type="submit"
             value="Get Started">
 
 
+          </form>
+
+
         </div><!-- form-group -->
       </div><!-- card-body -->
     </div><!-- card -->
   </div><!-- row -->
+
+<div class="container">
+  <div class="row"
+  *ngFor="let perk of perks"
+  (click)='selectPlan($event,perk)'
+  >
+  <ul>
+    <li>{{perk.feature}}</li>
+  </ul>
+
+  </div>
+</div>
 
 </div>
 <div class="position-absolute container" style="left: 0; z-index:10">
