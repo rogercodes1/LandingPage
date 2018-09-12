@@ -52,16 +52,18 @@
     </div><!-- card -->
   </div><!-- row -->
 
-<div class=" m-3 perks-cont container">
-  <div class="row"
+<div class=" m-3 center perks-cont container">
+  <div class="row row-perk"
   *ngFor="let perk of perks"
-  (click)='selectPlan($event,perk)'
-  >
-    <div class="mt-4">
-      <div class="perk-title">
-        <p class="perk-description {{perk.icon}}"></p> {{perk.title}}</div>
+  (click)='selectPlan($event,perk)'>
 
-      {{perk.feature}}</div>
+    <div class="mt-4 col-sm-12 col-lg-4 ">
+      <div class="perk-title">
+        <span class="{{perk.icon}} mr-2"></span>
+        {{perk.title}}
+       </div>
+      <p>{{perk.feature}}</p>
+    </div>
 
   </div>
 </div>
