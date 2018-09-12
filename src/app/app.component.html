@@ -1,4 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<header id="header">
+
+</header>
 <div class="position-relative container">
   <h3 class="">A Music Plan for All</h3>
   <div class="row justify-content-center">
@@ -9,7 +12,9 @@
           *ngIf="query">
             <strong>For: {{ query }}</strong>
           </div>
-          <input class="form-control mt-2" type="text">
+          <input placeholder="Enter your email ..." class="form-control mt-2" type="text"
+          [(ngModel)]="query">
+
         </div><!-- form-group -->
       </div><!-- card-body -->
     </div><!-- card -->
