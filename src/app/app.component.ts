@@ -4,7 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   // template:`<h1> Music Unlimited </h1>`
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  styles: [`
+    .list-group-item:first-child{
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top: 0;
+    }`]
 })
 export class AppComponent {
   title = 'LandingPage';
