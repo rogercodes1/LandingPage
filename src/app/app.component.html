@@ -1,11 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="position-relative container">
+  <h3 class="">A Music Plan for All</h3>
   <div class="row justify-content-center">
     <div class="card mt-sm-3 col-md-8">
       <div class="card-body">
-        <h3 class="mb-0">Choose Your Music Plan</h3>
         <div class="form-group">
-          <div class="form-label">
+          <div class="form-label"
+          *ngIf="query">
             <strong>For: {{ query }}</strong>
           </div>
           <input class="form-control mt-2" type="text">
@@ -19,7 +20,7 @@
        <div class="list-group">
          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
           *ngFor="let artist of artists"
-          (click)="showArtist($event)">
+          (click)="showArtist($event, artist)">
 
              <div class="media">
                <div class="media-body align-self-center">

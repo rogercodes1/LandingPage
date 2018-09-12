@@ -5,24 +5,25 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   // template:`<h1> Music Unlimited </h1>`
   styleUrls: ['./app.component.css'],
-  styles: [`
-    .list-group-item:first-child{
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      border-top: 0;
-    }`]
+  // styles: [`
+  //   .list-group-item:first-child{
+  //     border-top-left-radius: 0;
+  //     border-top-right-radius: 0;
+  //     border-top: 0;
+  //   }`]
 })
 export class AppComponent {
   title = 'LandingPage';
   query: string;
   artists: object;
 
-  showArtist(e){
+  showArtist(e, item){
     console.log(e);
+    this.query = item.name
   }
 
   constructor(){
-    this.query = 'Barot';
+    this.query = '';
     this.artists = [
 {
 "name": "Barot Bellingham",
