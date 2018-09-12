@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'LandingPage';
   query: string;
-  artists: object;
+  plans: object;
 
   showArtist(e, item){
     console.log(e);
@@ -26,19 +26,19 @@ export class AppComponent {
     this.query = '';
     this.plans = [
 {
-"name": "Apple Music",
-"startPrice": "$6.99",
+"name": "Free Trial",
+"startPrice": "30 days",
 "description": "Stream 45 million songs, ad-free on Apple Music. Shop HomePod, AirPods, and headphones. And build your entertainment collection with iPod and iTunes.",
 
 },
 {
-"name": "Spotify",
-"startPrice": "$4.99",
+"name": "Student",
+"startPrice": "Professional",
 "description": "Stream 45 million songs, ad-free on Apple Music. Shop HomePod, AirPods, and headphones. And build your entertainment collection with iPod and iTunes.",
 
 },
 {
-"name": "Pandora",
+"name": "Family",
 "startPrice": "Free (with Ads), $4.99",
 "description": "Pandora is free, personalized radio that plays music you'll love. Discover new music and enjoy old favorites. ",
 

@@ -7,7 +7,18 @@
     </a>
 
   </h4>
-<nav class="navbar navbar-expand-lg">
+<nav id="nav-bar" class="navbar navbar-expand-lg">
+  <ul>
+    <li class="nav-link">
+      <a href="">Features</a></li>
+    <li class="nav-link">
+      <a href="#howItWorks">How it works</a>
+    </li>
+    <li class="nav-link">
+    <a href="#Plans">Plans</a>
+  </li>
+
+  </ul>
 </nav>
 </header>
 <div class="position-relative container">
@@ -16,12 +27,19 @@
     <div class="card mt-sm-3 col-md-8">
       <div class="card-body">
         <div class="form-group">
+          Sign up is just an email away:
           <div class="form-label"
           *ngIf="query">
             <strong>Email: {{ query }}</strong>
           </div>
-          <input placeholder="Enter your email ..." class="form-control mt-2" type="email"
-          [(ngModel)]="query">
+
+            <input placeholder="Enter your email ..." class="form-control mt-2" type="email"
+            [(ngModel)]="query">
+            <input
+            class="btn btn-primary"
+            type="submit"
+            value="Get Started">
+
 
         </div><!-- form-group -->
       </div><!-- card-body -->
@@ -35,7 +53,7 @@
      <div class="list-group">
        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
         *ngFor="let plan of plans"
-        (click)="showArtist($event, plan)">
+        (click)="selectPlan($event, plan)">
 
            <div class="media">
              <div class="media-body align-self-center">
