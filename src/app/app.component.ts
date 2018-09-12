@@ -17,6 +17,9 @@ export class AppComponent {
   query: string;
   artists: object;
 
+  showArtist(e){
+    console.log(e);
+  }
 
   constructor(){
     this.query = 'Barot';
