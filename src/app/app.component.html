@@ -52,12 +52,12 @@
     </div><!-- card -->
   </div><!-- row -->
 
-<div class=" m-3 center perks-cont container">
+<div class=" m-3 perks-cont position-relative container ">
   <div class="row row-perk"
   *ngFor="let perk of perks"
   (click)='selectPlan($event,perk)'>
 
-    <div class="mt-4 col-sm-12 col-lg-4 ">
+    <div class="mt-4 col-sm-12">
       <div class="perk-title">
         <span class="{{perk.icon}} mr-2"></span>
         {{perk.title}}
@@ -72,17 +72,18 @@
 <div class="mt-4 position-absolute container" style="left: 0; z-index:10">
  <div class="row justify-content-center">
    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
-     <div class="list-group">
-       <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+     <div class="plan-cont">
+       <a href="#" class=" "
         *ngFor="let plan of plans"
         (click)="selectPlan($event, plan)">
 
-           <div class="media">
-             <div class="media-body align-self-center">
-               <h5 class="m-0"> {{plan.name}}</h5>
-               {{plan.startPrice}}
-             </div><!-- media body -->
-           </div><!-- media -->
+        <div class="card text-center card-plan" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{plan.name}}</h5>
+            <p class="card-text">{{plan.description}}</p>
+            <a href="#" class="btn btn-primary">Let's Go</a>
+          </div>
+          </div>
        </a><!-- link -->
      </div><!-- list-group -->
    </div><!-- col -->

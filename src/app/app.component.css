@@ -58,28 +58,32 @@ ul{
   list-style: none;
 }
 /* Perks Container  */
+@@media (min-width: 650px) {
+  .perks-cont{
+    display: flex;
+  }
 
+}
+/* .perks-cont{
+  display: flex;
+} */
 .perk-title{
   font-size: 2em;
 }
 .perk-feature{
   font-size: 1.5em;
 }
-@@media (min-width:720px) {
-  .perk-title{
-    text-align: left;
-  }
-
-}
-.perks-cont{
+.container-center {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-@@media (min-width: 720px;) {
-  .center{
-    text-align: center;
-    margin-left: auto;
-    margin-right:
-    ;
-  }
-
+/* Plan Cards */
+.card-plan{
+  margin: 20px;
+  padding: 50px 80px;
+}
+.plan-cont{
+  
 }
