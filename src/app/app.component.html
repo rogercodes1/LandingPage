@@ -1,9 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <header id="header">
-<nav>
-  <a href="#" class="btn btn-info btn-lg">
-    <span class="glyphicon glyphicon-music"></span> Music
-  </a>
+  <h4>
+    <a href="#" id="header-img" class="navbar-brand">
+      <span class="glyphicon glyphicon-music"></span>
+      Music
+    </a>
+
+  </h4>
+<nav class="navbar navbar-expand-lg">
 </nav>
 </header>
 <div class="position-relative container">
@@ -14,9 +18,9 @@
         <div class="form-group">
           <div class="form-label"
           *ngIf="query">
-            <strong>For: {{ query }}</strong>
+            <strong>Email: {{ query }}</strong>
           </div>
-          <input placeholder="Enter your email ..." class="form-control mt-2" type="text"
+          <input placeholder="Enter your email ..." class="form-control mt-2" type="email"
           [(ngModel)]="query">
 
         </div><!-- form-group -->
@@ -30,13 +34,13 @@
    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
      <div class="list-group">
        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
-        *ngFor="let artist of artists"
-        (click)="showArtist($event, artist)">
+        *ngFor="let plan of plans"
+        (click)="showArtist($event, plan)">
 
            <div class="media">
              <div class="media-body align-self-center">
-               <h5 class="m-0"> {{artist.name}}</h5>
-               {{artist.startPrice}}
+               <h5 class="m-0"> {{plan.name}}</h5>
+               {{plan.startPrice}}
              </div><!-- media body -->
            </div><!-- media -->
        </a><!-- link -->
