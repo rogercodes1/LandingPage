@@ -52,12 +52,12 @@
     </div><!-- card -->
   </div><!-- row -->
 
-<div class=" mt-3 perks-cont container">
+<div class=" m-3 perks-cont container">
   <div class="row"
   *ngFor="let perk of perks"
   (click)='selectPlan($event,perk)'
   >
-    <div class="col">
+    <div class="mt-4">
       <div class="perk-title">
         <p class="perk-description {{perk.icon}}"></p> {{perk.title}}</div>
 
@@ -67,7 +67,7 @@
 </div>
 
 </div>
-<div class="position-absolute container" style="left: 0; z-index:10">
+<div class="mt-4 position-absolute container" style="left: 0; z-index:10">
  <div class="row justify-content-center">
    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
      <div class="list-group">
