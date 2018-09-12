@@ -39,8 +39,8 @@ export class AppComponent {
 },
 {
 "name": "Pandora",
-"startPrice": "$4.99",
-"description": "Stream 45 million songs, ad-free on Apple Music. Shop HomePod, AirPods, and headphones. And build your entertainment collection with iPod and iTunes.",
+"startPrice": "Free (with Ads), $4.99",
+"description": "Pandora is free, personalized radio that plays music you'll love. Discover new music and enjoy old favorites. ",
 
 }
 ]
