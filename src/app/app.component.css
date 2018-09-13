@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 } */
+.body{
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(126, 213, 111, .7),
+    rgb(40, 180, 133,.8));
+}
 h3{
   text-align: center;
 
@@ -78,9 +84,11 @@ ul{
 /* Plan Cards */
 .card-text{
   width:80%;
+  font-size: 2em;
   margin: 0 auto;
 }
 .card-plan{
+
   margin: 20px;
   padding: 40px;
   height:350px;

@@ -50,19 +50,19 @@ export class AppComponent {
 {
 "name": "Free Trial",
 "startPrice": "30 days",
-"description": "Stream 45 million songs, ad-free on Apple Music. Shop HomePod, AirPods, and headphones. And build your entertainment collection with iPod and iTunes.",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum venenatis nulla vitae sodales. Phasellus dictum, ipsum ac posuere congue, nisl metus auctor dolor, vitae pharetra massa velit nec velit.",
 
 },
 {
 "name": "Student",
 "startPrice": "Professional",
-"description": "Stream 45 million songs, ad-free on Apple Music. Shop HomePod, AirPods, and headphones. And build your entertainment collection with iPod and iTunes.",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum venenatis nulla vitae sodales. Phasellus dictum, ipsum ac posuere congue, nisl metus auctor dolor, vitae pharetra massa velit nec velit.",
 
 },
 {
 "name": "Family",
 "startPrice": "Free (with Ads), $4.99",
-"description": "Pandora is free, personalized radio that plays music you'll love. Discover new music and enjoy old favorites. ",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum venenatis nulla vitae sodales. Phasellus dictum, ipsum ac posuere congue, nisl metus auctor dolor, vitae pharetra massa velit nec velit. ",
 
 }
 ]
