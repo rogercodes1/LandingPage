@@ -53,12 +53,12 @@
   </div><!-- row -->
 </div>
 
-<div class=" m-3 perks-cont position-relative container ">
-  <div class="row row-perk"
+<div class=" perks-cont position-relative container ">
+  <div class="row perk-row"
   *ngFor="let perk of perks"
   (click)='selectPlan($event,perk)'>
 
-    <div class="mt-4 mb-4 col-sm-12">
+    <div class="mt-4 mb-4 col-sm-12 col-offset-2">
       <div class="perk-title">
         <span class="{{perk.icon}} mr-2"></span>
         {{perk.title}}

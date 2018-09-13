@@ -65,18 +65,35 @@ ul{
   list-style: none;
 }
 /* Perks Container  */
-@@media (min-width: 650px) {
+@media (min-width: 800px) {
   .perks-cont{
     display: flex;
+    height: 350px;
+
   }
 
 }
+@media (max-width:550px) {
+  .perks-cont{
+    height: 600px;
+  }
+}
+@media (max-width:400px) {
+  .perks-cont{
+    height: 800px;
+  }
+}
 .perks-cont{
-  height: 350px;
+
   /* display: flex; */
 }
 .perk-title{
   font-size: 2.5em;
+}
+.perk-row{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .perk-feature{
   font-size: 1.5em;
@@ -114,6 +131,9 @@ ul{
 
 /* iFrame */
 .video{
+
+  transform: translate(0%);
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   float: center;
