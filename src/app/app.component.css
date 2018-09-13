@@ -13,6 +13,9 @@ a {
   color: #000;
   text-decoration: none;
 }
+.title{
+  font-size: 3em;
+}
 .list-group-item:first-child{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -27,7 +30,10 @@ li.nav-link{
   display: inline;
   font-size: 1.5em;
 }
-
+/*Top portion  */
+.top-cont{
+  height: 250px;
+}
 /* Sign up email container */
 .card-body{
   margin: auto;
@@ -65,9 +71,10 @@ ul{
   }
 
 }
-/* .perks-cont{
-  display: flex;
-} */
+.perks-cont{
+  height: 350px;
+  /* display: flex; */
+}
 .perk-title{
   font-size: 2.5em;
 }
@@ -108,7 +115,9 @@ ul{
 }
 
 /* iFrame */
-/* .video{
-  transform: translate(50%, 50%);
+.video{
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
 
-} */
+}
