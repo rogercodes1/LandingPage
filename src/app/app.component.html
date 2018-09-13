@@ -10,18 +10,18 @@
   </h4>
   <ul>
     <li class="nav-link">
-      <a href="">Features</a></li>
+      <a href="#features">Features</a></li>
     <li class="nav-link">
       <a href="#howItWorks">How it works</a>
     </li>
     <li class="nav-link">
-    <a href="#Plans">Plans</a>
+    <a href="#pricing">Plans</a>
   </li>
 
   </ul>
 </nav>
 </header>
-<div class="top-cont position-relative container">
+<div  class="top-cont position-relative container">
   <h3 class="title">A Music Plan for All</h3>
   <div class=" row justify-content-center">
     <div class="card mt-sm-3 col-md-8">
@@ -42,10 +42,7 @@
             class="btn btn-primary"
             type="submit"
             value="Get Started">
-
-
           </form>
-
 
         </div><!-- form-group -->
       </div><!-- card-body -->
@@ -53,7 +50,7 @@
   </div><!-- row -->
 </div>
 
-<div class=" perks-cont position-relative container ">
+<div id="features" class="perks-cont position-relative container ">
   <div class="row perk-row"
   *ngFor="let perk of perks"
   (click)='selectPlan($event,perk)'>
@@ -70,14 +67,14 @@
 </div>
 
 <!-- embedded video portion -->
-<div class="video">
+<div id="howItWorks" class="video">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/diLp6hUqvVk" frameborder="0" allow="autoplay; encrypted-media"
     align="middle"
    allowfullscreen></iframe>
 
 </div>
 <!--Plan Card Section   -->
-  <div class="mt-4 plan-cont">
+  <div id="pricing" class="mt-4 plan-cont">
      <div
      *ngFor="let plan of plans"
      (click)="selectPlan($event, plan)">
