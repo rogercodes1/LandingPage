@@ -73,17 +73,25 @@ ul{
 .perk-feature{
   font-size: 1.5em;
 }
-.container-center {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 /* Plan Cards */
+.card-text{
+  width:80%;
+  margin: 0 auto;
+}
 .card-plan{
   margin: 20px;
-  padding: 50px 80px;
+  padding: 40px;
+  height:350px;
+  position: relative;
 }
 .plan-cont{
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.plan-btn{
+  position: fixed;
 }
