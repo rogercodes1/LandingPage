@@ -82,7 +82,6 @@ ul{
   font-size: 1.5em;
 }
 
-
 /* Plan Cards */
 .card-text{
   width:80%;
@@ -90,7 +89,6 @@ ul{
   margin: 0 auto 30px;
 }
 .card-plan{
-
   margin: 20px;
   padding: 40px;
   height:350px;
@@ -100,7 +98,7 @@ ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  height:500px;
 }
 .plan-btn{
   font-size: 1.5em;
@@ -119,5 +117,5 @@ ul{
   margin-left: auto;
   margin-right: auto;
   float: center;
-
+  height: 450px;
 }
