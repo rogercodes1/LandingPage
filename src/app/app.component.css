@@ -13,6 +13,7 @@ a {
   color: #000;
   text-decoration: none;
 }
+
 .title{
   font-size: 3em;
 }
@@ -28,7 +29,7 @@ a {
 /* Nav Bar  */
 li.nav-link{
   display: inline;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 /*Top portion  */
 .top-cont{
