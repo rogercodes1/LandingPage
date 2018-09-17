@@ -39,6 +39,9 @@ li.nav-link{
 .card-body{
   margin: auto;
 }
+.sign-up{
+  font-size: 1.5em;
+}
 input[type="email"] {
     max-width: 375px;
     min-width:250px;
@@ -109,18 +112,26 @@ ul{
 .card-plan{
   margin: 20px;
   padding: 40px;
-  height:350px;
+  height:380px;
+  width: 350px;
   position: relative;
 }
 .plan-cont{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height:500px;
+  justify-content: center;
 }
 .plan-btn{
   font-size: 1.5em;
   padding:10px;
+}
+
+@media (max-width:1130px) {
+  .plan-cont{
+    flex-wrap: wrap;
+  }
 }
 
 /*test css  */
@@ -132,7 +143,6 @@ ul{
 
 /* iFrame */
 .video{
-
   transform: translate(0%);
   text-align: center;
   margin-left: auto;
