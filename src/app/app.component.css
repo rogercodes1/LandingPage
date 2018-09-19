@@ -119,7 +119,6 @@ ul{
 .plan-cont{
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   height:500px;
   justify-content: center;
 }
