@@ -12,7 +12,7 @@
     <li class="nav-link">
       <a href="#features">Features</a></li>
     <li class="nav-link">
-      <a href="#howItWorks">How it works</a>
+      <a href="#video">How it works</a>
     </li>
     <li class="nav-link">
     <a href="#pricing">Plans</a>
@@ -32,15 +32,18 @@
           *ngIf="email">
             <strong>Email: {{ email }}</strong>
           </div>
-          <form id="form" action="">
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input
             placeholder="Enter your email ..."
+            id="email"
             class="form-control mt-2" type="email"
             name="email"
             [(ngModel)]="email">
             <input
+            id="submit"
             class="btn btn-primary"
             type="submit"
+            onClick()
             value="Get Started">
           </form>
 
@@ -49,6 +52,11 @@
     </div><!-- card -->
   </div><!-- row -->
 </div>
+<script type="text/javascript">
+  onClick() =>{
+
+  }
+</script>
 
 <div id="features" class="perks-cont position-relative container ">
   <div class="row perk-row"
@@ -67,7 +75,7 @@
 </div>
 
 <!-- embedded video portion -->
-<div id="howItWorks" class="video">
+<div id="video" class="video">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/diLp6hUqvVk" frameborder="0" allow="autoplay; encrypted-media"
     align="middle"
    allowfullscreen></iframe>
